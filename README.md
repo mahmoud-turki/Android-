@@ -19,8 +19,8 @@ It's a collection of utility classes and API's helps you to integrate it with yo
   - Please check the Helper clasess here [link](https://github.com/mahmoud-turki/Android-/blob/master/app/src/main/java/com/turki/androidapis/storage/caching/CachingOnInternalStorage.java) & Activity example here [link](https://github.com/mahmoud-turki/Android-/blob/master/app/src/main/java/com/turki/androidapis/activities/CachingUtilityClassActivityExample.java).
 
 ###### Hint: 
-Please don't forget to add ApplicationController class when you trying to user the samples. You can download it from here [link](https://github.com/mahmoud-turki/Android-/blob/master/app/src/main/java/com/turki/androidapis/application/ApplicationController.java) or download the whole source code.
+  - Please don't forget to add ApplicationController class when you trying to user the samples. You can download it from here [link](https://github.com/mahmoud-turki/Android-/blob/master/app/src/main/java/com/turki/androidapis/application/ApplicationController.java) or download the whole source code.
 
 
 ### Contribute-
-Please if you find any bug or a better way to implement it feel > free to pull-request for it.
+  - Please if you find any bug or a better way to implement it :shipit: feel free to pull-request for it.:+1:
