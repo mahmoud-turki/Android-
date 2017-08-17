@@ -13,8 +13,8 @@ It's a collection of utility classes and API's helps you to integrate it with yo
 ##### 5. Caching 
   - Please check the Helper clasess here [link](https://) & Activity example here [link](https://)
 
-######## Please don't forget to add ApplicationController class when you trying to user the samples. 
-You can download it from here [link](https://) or download the whole source code.
+###### Hint: 
+Please don't forget to add ApplicationController class when you trying to user the samples. You can download it from here [link](https://) or download the whole source code.
 
 
 ### Contribute-
