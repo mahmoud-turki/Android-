@@ -23,4 +23,4 @@ Please don't forget to add ApplicationController class when you trying to user t
 
 
 ### Contribute-
-Please if you find any bug or a better way to implement it feel #####[free to pull-request for it].
+Please if you find any bug or a better way to implement it feel > free to pull-request for it.
