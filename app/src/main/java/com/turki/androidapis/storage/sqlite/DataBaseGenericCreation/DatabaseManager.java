@@ -6,6 +6,8 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
+import com.turki.androidapis.storage.sqlite.ApplicationTables.UserTable;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -54,6 +56,7 @@ public class DatabaseManager extends SQLiteOpenHelper {
 
     public void initializeTables() {
         // TODO: initialize instances of all your tables here
+        UserTable.getInstance();
     }
 
     public void clearAppDatabase() {
