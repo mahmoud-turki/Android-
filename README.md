@@ -14,7 +14,8 @@ It's a collection of utility classes and API's helps you to integrate it with yo
   - Please check the Helper clasess here [link](https://) & Activity example here [link](https://)
 
 ```ruby
-require 'Please don't forget to add Application Controller class when you trying to text the samples. You can download it from the follwoing link [link](https://) or download the source code '
+require 'Please don't forget to add ApplicationController file when you trying to text the samples'. 
+You can download it from the follwoing link [link](https://) or download the source code '
 ```
 
 ### Contribute-
