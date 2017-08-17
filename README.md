@@ -3,15 +3,15 @@ It's a collection of utility classes and API's helps you to integrate it with yo
 
 ### Storage-
 ##### 1. SharedPerfernces Storage 
-  - Please check the Helper clasess here [link](https://) and Activity example here [link](https://)
+  * Please check the Helper clasess here [link](https://) & Activity example here [link](https://)
 ##### 2. Internal Files Storage 
-  - Please check the Helper clasess here [link](https://) and Activity example here [link](https://)
+  - Please check the Helper clasess here [link](https://) & Activity example here [link](https://)
 ##### 3. External Files Storage 
-  - Please check the Helper clasess here [link](https://) and Activity example here [link](https://)
+  - Please check the Helper clasess here [link](https://) & Activity example here [link](https://)
 ##### 4. SQLite Storage
-  - Please check the Helper clasess here [link](https://) and Activity example here [link](https://)
+  - Please check the Helper clasess here [link](https://) & Activity example here [link](https://)
 ##### 5. Caching 
-  - Please check the Helper clasess here [link](https://) and Activity example here [link](https://)
+  - Please check the Helper clasess here [link](https://) & Activity example here [link](https://)
 
 
 ### Contribute-
