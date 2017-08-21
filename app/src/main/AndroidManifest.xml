@@ -9,16 +9,30 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.SharedPreferenceUtilityClassActivityExample">
+        <activity android:name=".activities.SharedPreferenceUtilityClassActivityExample"></activity>
+        <activity android:name=".activities.SQLiteUtilityClassActivityExample" />
+        <activity android:name=".activities.FileStorageUtilityClassActivityExample" />
+        <activity android:name=".activities.CachingUtilityClassActivityExample"></activity>
+        <activity android:name=".desginpatterns.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.SQLiteUtilityClassActivityExample" />
-        <activity android:name=".activities.FileStorageUtilityClassActivityExample" />
-        <activity android:name=".activities.CachingUtilityClassActivityExample"></activity>
+        <activity
+            android:name=".desginpatterns.mvcdemo.controller.TicTacToeMVCActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".desginpatterns.mvpdemo.view.TicTacToeMVPActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".desginpatterns.mvvmdemo.view.TicTacToeMVVMActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
     </application>
 
 </manifest>

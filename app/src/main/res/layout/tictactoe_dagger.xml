@@ -9,7 +9,7 @@
 
         <variable
             name="viewModel"
-            type="com.turki.tictactoe.mvvmdemo.viewmodel.TicTacToeViewModel" />
+            type="com.turki.androidapis.desginpatterns.mvvmdemo.viewmodel.TicTacToeViewModel" />
     </data>
 
     <LinearLayout

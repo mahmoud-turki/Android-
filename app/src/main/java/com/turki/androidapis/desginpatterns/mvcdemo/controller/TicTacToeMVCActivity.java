@@ -1,4 +1,4 @@
-package com.turki.androidapis.desginpatterns.controller;
+package com.turki.androidapis.desginpatterns.mvcdemo.controller;
 
 import android.content.Context;
 import android.content.Intent;
