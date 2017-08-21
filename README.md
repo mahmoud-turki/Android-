@@ -29,12 +29,12 @@ It's a collection of utility classes and API's helps you to integrate it with yo
 
   - Model View Presenter (MVP) & Model View ViewModel (MVVM) are two of the the most widely adopted alternatives, but developers are often divided as to which one better fits with Android. 
 
-##### 1. [MVC](https://github.com/mahmoud-turki/Android-/tree/master/app/src/main/java/com/turki/androidapis/desginpatterns/mvcdemo/controller)
+#### 1. [MVC](https://github.com/mahmoud-turki/Android-/tree/master/app/src/main/java/com/turki/androidapis/desginpatterns/mvcdemo/controller)
   - The model, view, controller approach separates your application at a macro level into 3 sets of responsibilities.
 
 ###### Model
 
-   - The model is the Data + State + Business logic of our Tic-Tac-Toe application. It’s the brains of our application so to speak. It is not tied to the view or controller, and because of this, it is reusable in many contexts. [here] (https://github.com/mahmoud-turki/Android-/tree/master/app/src/main/java/com/turki/androidapis/desginpatterns/model)
+   - The model is the Data + State + Business logic of our Tic-Tac-Toe application. It’s the brains of our application so to speak. It is not tied to the view or controller, and because of this, it is reusable in many contexts. [here](https://github.com/mahmoud-turki/Android-/tree/master/app/src/main/java/com/turki/androidapis/desginpatterns/model)
 
 ###### View
 
@@ -54,13 +54,13 @@ It's a collection of utility classes and API's helps you to integrate it with yo
   - Modularity & Flexibility - The controllers are tightly coupled to the views. It might as well be an extension of the view. If we change the view, we have to go back and change the controller.
   - Maintenance - Over time, particularly in applications with anemic models, more and more code starts getting transferred into the controllers, making them bloated and brittle.
 
-##### 2. [MVP](https://github.com/mahmoud-turki/Android-/tree/master/app/src/main/java/com/turki/androidapis/desginpatterns/mvpdemo)
+#### 2. [MVP](https://github.com/mahmoud-turki/Android-/tree/master/app/src/main/java/com/turki/androidapis/desginpatterns/mvpdemo)
 
   - MVP breaks the controller up so that the natural view/activity coupling can occur without tying it to the rest of the “controller” responsibilities. More on this below, but let’s start again with a common definition of responsibilities as compared to MVC.
 
 ###### Model
 
-  - Same as MVC / No change [here] (https://github.com/mahmoud-turki/Android-/tree/master/app/src/main/java/com/turki/androidapis/desginpatterns/model)
+  - Same as MVC / No change [here](https://github.com/mahmoud-turki/Android-/tree/master/app/src/main/java/com/turki/androidapis/desginpatterns/model)
 
 ###### View
 
@@ -81,13 +81,13 @@ Of course, the careful developer can help to prevent this, by diligently guardin
 
 
 
-##### 3. MVVM(https://github.com/mahmoud-turki/Android-/tree/master/app/src/main/java/com/turki/androidapis/desginpatterns/mvvmdemo)
+#### 3. [MVVM](https://github.com/mahmoud-turki/Android-/tree/master/app/src/main/java/com/turki/androidapis/desginpatterns/mvvmdemo)
 
   - MVVM with Data Binding on Android has the benefits of easier testing and modularity, while also reducing the amount of glue code that we have to write to connect the view + model.
 
 ###### Model
 
-  - Same as MVC / No change [here] (https://github.com/mahmoud-turki/Android-/tree/master/app/src/main/java/com/turki/androidapis/desginpatterns/model)
+  - Same as MVC / No change [here](https://github.com/mahmoud-turki/Android-/tree/master/app/src/main/java/com/turki/androidapis/desginpatterns/model)
 
 ###### View
 
