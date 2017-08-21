@@ -28,6 +28,8 @@ It's a collection of utility classes and API's helps you to integrate it with yo
   - The best practices approach for organizing Android applications into logical components has evolved over the last few years. The community has largely moved away from the monolithic Model View Controller (MVC) pattern in favor of more modular, testable patterns.
 
   - Model View Presenter (MVP) & Model View ViewModel (MVVM) are two of the the most widely adopted alternatives, but developers are often divided as to which one better fits with Android. 
+  
+  - The following Tic Tac Toe game demonstrate the implementation of MVC, MVP and MVVM.
 
 #### 1. [MVC](https://github.com/mahmoud-turki/Android-/tree/master/app/src/main/java/com/turki/androidapis/desginpatterns/mvcdemo/controller)
   - The model, view, controller approach separates your application at a macro level into 3 sets of responsibilities.
