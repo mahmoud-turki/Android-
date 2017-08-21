@@ -32,23 +32,23 @@ It's a collection of utility classes and API's helps you to integrate it with yo
 #### 1. [MVC](https://github.com/mahmoud-turki/Android-/tree/master/app/src/main/java/com/turki/androidapis/desginpatterns/mvcdemo/controller)
   - The model, view, controller approach separates your application at a macro level into 3 sets of responsibilities.
 
-###### Model
+##### Model
 
    - The model is the Data + State + Business logic of our Tic-Tac-Toe application. It’s the brains of our application so to speak. It is not tied to the view or controller, and because of this, it is reusable in many contexts. [here](https://github.com/mahmoud-turki/Android-/tree/master/app/src/main/java/com/turki/androidapis/desginpatterns/model)
 
-###### View
+##### View
 
   - The view is the Representation of the Model. The view has a responsibility to render the User Interface (UI) and communicate to the controller when the user interacts with the application. In MVC architecture, Views are generally pretty “dumb” in that they have no knowledge of the underlying model and no understanding of state or what to do when a user interacts by clicking a button, typing a value, etc. The idea is that the less they know the more loosely coupled they are to the model and therefore the more flexible they are to change.
 
-###### Controller
+##### Controller
 
   - The controller is Glue that ties the app together. It’s the master controller for what happens in the application. When the View tells the controller that a user clicked a button, the controller decides how to interact with the model accordingly. Based on data changing in the model, the controller may decide to update the state of the view as appropriate. In the case of an Android application, the controller is almost always represented by an Activity or Fragment.
 
-###### Evaluation
+##### Evaluation
 
   - MVC does a great job of separating the model and view. Certainly the model can be easily tested because it’s not tied to anything and the view has nothing much to test at a unit testing level. The Controller has a few problems however.
 
-###### Controller Concerns
+##### Controller Concerns
 
   - Testability - The controller is tied so tightly to the Android APIs that it is difficult to unit test.
   - Modularity & Flexibility - The controllers are tightly coupled to the views. It might as well be an extension of the view. If we change the view, we have to go back and change the controller.
@@ -58,23 +58,23 @@ It's a collection of utility classes and API's helps you to integrate it with yo
 
   - MVP breaks the controller up so that the natural view/activity coupling can occur without tying it to the rest of the “controller” responsibilities. More on this below, but let’s start again with a common definition of responsibilities as compared to MVC.
 
-###### Model
+##### Model
 
   - Same as MVC / No change [here](https://github.com/mahmoud-turki/Android-/tree/master/app/src/main/java/com/turki/androidapis/desginpatterns/model)
 
-###### View
+##### View
 
   - The only change here is that the Activity/Fragment is now considered part of the view. We stop fighting the natural tendency for them to go hand in hand. Good practice is to have the Activity implement a view interface so that the presenter has an interface to code to. This eliminates coupling it to any specific view and allows simple unit testing with a mock implementation of the view.
 
-###### Presenter
+##### Presenter
 
   - This is essentially the controller from MVC except that it is not at all tied to the View, just an interface. This addresses the testability concerns as well as the modularity/flexibility concerns we had with MVC. In fact, MVP purists would argue that the presenter should never have any references to any Android APIs or code.
 
-###### Evaluation
+##### Evaluation
 
   - This is much cleaner. We can easily unit test the presenter logic because it’s not tied to any Android specific views and APIs and that also allows us to work with any other view as long as the view implements the TicTacToeView interface.
 
-###### Presenter Concerns
+##### Presenter Concerns
 
   - Maintenance - Presenters, just like Controllers, are prone to collecting additional business logic, sprinkled in, over time. At some point, developers often find themselves with large unwieldy presenters that are difficult to break apart.
 Of course, the careful developer can help to prevent this, by diligently guarding against this temptation as the application changes over time. However, MVVM can help address this by doing less to start.
@@ -85,38 +85,38 @@ Of course, the careful developer can help to prevent this, by diligently guardin
 
   - MVVM with Data Binding on Android has the benefits of easier testing and modularity, while also reducing the amount of glue code that we have to write to connect the view + model.
 
-###### Model
+##### Model
 
   - Same as MVC / No change [here](https://github.com/mahmoud-turki/Android-/tree/master/app/src/main/java/com/turki/androidapis/desginpatterns/model)
 
-###### View
+##### View
 
   - The view binds to observable variables and actions exposed by the viewModel in a flexible way. More on that in minute.
 
-###### ViewModel
+##### ViewModel
 
   - The ViewModel is responsible for wrapping the model and preparing observable data needed by the view. It also provides hooks for the view to pass events to the model. The ViewModel is not tied to the view however.
 
-###### Evaluation
+##### Evaluation
 
   - Unit testing is even easier now, because you really have no dependency on the view. When testing, you only need to verify that the observable variables are set appropriately when the model changes. There is no need to mock out the view for testing as there was with the MVP pattern.
 
-###### MVVM Concerns
+##### MVVM Concerns
 
   - Maintenance - Since views can bind to both variables and expressions, extraneous presentation logic can creep in over time, effectively adding code to our XML. To avoid this, always get values directly from the ViewModel rather than attempt to compute or derive them in the views binding expression. This way the computation can be unit tested appropriately.
 
 
 ##### Feature comparison MVP vs MVVM
 
-###### Code metrics
+##### Code metrics
   - MVP may produce more classes and Java code. In MVVM there are more Java classes but less code per class.
 Maintainability
   - MVP is easy to learn, amend, add features. Adding new features with MVVM may require some experience with the library.
 
-###### Logic
+##### Logic
   - In MVP the View is actually your application while Presenter handles the app flow. In MVVM code classes (ViewModel) are the application, while the View is the interface allowing users to interact with the app.
 
-###### Data input
+##### Data input
   - Begins with the View in MVP, not the Presenter. The input in MVVM begins with the View, not the ViewModel.
 Mapping and references.
 
