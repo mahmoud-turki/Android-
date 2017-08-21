@@ -32,9 +32,9 @@ It's a collection of utility classes and API's helps you to integrate it with yo
 ##### 1. MVC
   - The model, view, controller approach separates your application at a macro level into 3 sets of responsibilities.
 
-###### Model
+######  - Model
 
-  - The model is the Data + State + Business logic of our Tic-Tac-Toe application. It’s the brains of our application so to speak. It is not tied to the view or controller, and because of this, it is reusable in many contexts.
+    - The model is the Data + State + Business logic of our Tic-Tac-Toe application. It’s the brains of our application so to speak. It is not tied to the view or controller, and because of this, it is reusable in many contexts.
 
 ###### View
 
